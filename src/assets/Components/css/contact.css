@@ -1,0 +1,41 @@
+#contact {
+  color: #fff;
+  padding-top: 180px;
+}
+#contact h2 {
+  margin-bottom: 24px;
+}
+#contact input {
+  width: 100%;
+  height: 54px;
+  border: none;
+  padding: 12px;
+  margin: 12px 0;
+}
+#contact input:nth-child(6) {
+  height: 150px;
+}
+#contact button {
+  margin: 64px 0 0 0;
+  color: #fff;
+  width: 105px;
+  height: 44px;
+  border: none;
+  background-color: red;
+  margin-bottom: 64px;
+  border-radius: 20px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+#contact button:hover {
+  background: linear-gradient(180deg, #f00 12.81%, #870000 99.59%);
+
+  box-shadow: 0px 0px 50px #870000;
+}

@@ -1,0 +1,35 @@
+#main {
+  width: 100%;
+  color: white;
+  padding: 0 0 50px 0;
+}
+#main .banner h3 {
+  text-decoration: none;
+  margin: 105px 0 124px 0 !important;
+}
+#main h3 {
+  color: white;
+  text-decoration: underline;
+  margin: 0 0 64px 0;
+}
+.feedback {
+  position: relative;
+  text-align: center;
+  padding: 24px 0;
+  border: 1px solid #870000;
+}
+.feedback img {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: 40px;
+  height: 40px;
+  line-height: 36px;
+  color: white;
+  background-color: red;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}

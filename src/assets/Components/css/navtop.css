@@ -1,0 +1,124 @@
+#nav {
+  position: fixed;
+  width: 100%;
+  background: rgba(10, 10, 10, 1);
+  z-index: 9999;
+}
+#nav a {
+  position: relative;
+  color: rgba(255, 255, 255, 0.7);
+}
+#nav .line a::before {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  content: "";
+  background-color: white;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+#nav .line a:hover::before {
+  width: 100%;
+}
+#nav a i {
+  opacity: 0;
+  margin-left: 5px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+#nav a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+#nav a:hover i {
+  opacity: 1;
+}
+#nav button {
+  background-color: #fff;
+  text-align: end;
+  margin-right: 15px;
+}
+#nav .button {
+  background-color: transparent;
+  color: white;
+  border: rgba(255, 255, 255, 0.7) 2px solid;
+  padding: 10px 25px;
+  transition: 0.5s;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+#nav .button:hover {
+  transform: scale(1.1);
+  color: black;
+  background-color: #fff;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+#nav .button:hover a {
+  color: black;
+}
+@media (max-width: 991px) {
+  .navbar-nav {
+    text-align: end;
+    padding: 0 5px;
+  }
+  #nav .line {
+    text-align: end;
+  }
+  #nav .link button {
+    background-color: #fff;
+  }
+  #nav .button:hover {
+    background-color: transparent;
+    color: white;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+  #nav .button {
+    width: 100%;
+    border: none !important;
+  }
+  #nav .button a::before {
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    content: "";
+    background-color: white;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+  }
+  #nav .button a:hover::before {
+    width: 100%;
+  }
+  button:focus:not(:focus-visible) {
+    outline: none;
+  }
+  .navbar-toggler:focus {
+    outline: none;
+    box-shadow: none !important;
+  }
+}

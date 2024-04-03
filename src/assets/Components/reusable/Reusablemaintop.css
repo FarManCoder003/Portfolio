@@ -1,0 +1,54 @@
+h1 {
+  padding-top: 200px;
+  color: white !important;
+}
+span {
+  position: relative;
+}
+.underlined svg {
+  position: absolute;
+  width: 142px;
+  bottom: -15px;
+  right: -15px;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: -1000;
+  }
+}
+.underlined .animated-path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 2s linear infinite;
+  -webkit-animation: dash 2s linear infinite;
+}
+
+.banner h3 {
+  color: white;
+  text-decoration: none;
+  margin: 105px 0 124px 0 !important;
+}
+.connectbutton {
+  color: #fff;
+  width: 105px;
+  height: 44px;
+  border: none;
+  background-color: red;
+  margin-bottom: 64px;
+  border-radius: 20px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.connectbutton:hover {
+  background: linear-gradient(180deg, #f00 12.81%, #870000 99.59%);
+
+  box-shadow: 0px 0px 50px #870000;
+}

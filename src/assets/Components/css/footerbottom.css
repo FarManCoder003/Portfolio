@@ -1,0 +1,176 @@
+body {
+  background-color: #000 !important;
+}
+footer {
+  background-color: #870000;
+  padding: 40px 0;
+  margin-top: 200px;
+}
+footer h2 {
+  color: white;
+}
+footer a {
+  color: white;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+footer a:hover {
+  text-decoration: underline !important;
+}
+footer a:nth-child(3):hover {
+  color: green !important;
+}
+footer a:nth-child(6):hover {
+  color: red !important;
+}
+footer i {
+  margin-right: 10px;
+}
+footer i:nth-child(2) {
+  color: green;
+}
+footer i:nth-child(5) {
+  color: red;
+}
+footer span {
+  position: relative;
+  height: 40px;
+  display: inline-block;
+  margin: 29px 0 0 0;
+  background-color: white;
+  border-radius: 10px !important;
+  -webkit-border-radius: 10px !important;
+  -moz-border-radius: 10px !important;
+  -ms-border-radius: 10px !important;
+  -o-border-radius: 10px !important;
+}
+footer span::after {
+  position: absolute;
+  top: -30px;
+  left: -170px;
+  width: 2px;
+  height: 100px;
+  content: "";
+  background-color: white;
+}
+footer span input {
+  border: none;
+  padding: 0 0 0 5px !important;
+  margin: 0 !important;
+}
+footer span button {
+  padding: 0 5px;
+  height: 100%;
+  color: white;
+  background-color: red;
+  border: none;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+footer span button:hover {
+  background-color: black;
+}
+footer .icons i {
+  font-size: 35px;
+}
+footer .icons {
+  width: 55%;
+  margin-top: 15px !important;
+  display: flex;
+  justify-content: space-between;
+}
+footer .icons i:nth-child(2) a {
+  color: #316ff6 !important;
+}
+footer .icons i:nth-child(5) a {
+  color: #0077b5 !important;
+}
+.col {
+  text-align: center !important;
+}
+body .footer {
+  --footer-background: #870000;
+  position: relative;
+  grid-area: footer;
+  min-height: 16rem;
+}
+body .footer .bubbles {
+  position: absolute;
+  z-index: -99999;
+  top: -12px;
+  width: 94%;
+  height: 1rem;
+  background: var(--footer-background);
+  filter: url("#blob");
+  -webkit-filter: url("#blob");
+}
+body .footer .bubbles .bubble {
+  position: absolute;
+  left: var(--position, 50%);
+  background: var(--footer-background);
+  border-radius: 100%;
+  -webkit-animation: bubble-size var(--time, 4s) ease-in infinite
+    var(--delay, 0s);
+  animation: bubble-size var(--time, 4s) ease-in infinite var(--delay, 0s),
+    bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
+  transform: translate(-50%, 100%);
+  -webkit-transform: translate(-50%, 100%);
+  -moz-transform: translate(-50%, 100%);
+  -ms-transform: translate(-50%, 100%);
+  -o-transform: translate(-50%, 100%);
+}
+@-webkit-keyframes bubble-size {
+  0%,
+  75% {
+    width: var(--size, 4rem);
+    height: var(--size, 4rem);
+  }
+  100% {
+    width: 0rem;
+    height: 0rem;
+  }
+}
+
+@keyframes bubble-size {
+  0%,
+  75% {
+    width: var(--size, 4rem);
+    height: var(--size, 4rem);
+  }
+  100% {
+    width: 0rem;
+    height: 0rem;
+  }
+}
+@-webkit-keyframes bubble-move {
+  0% {
+    bottom: -4rem;
+  }
+  100% {
+    bottom: var(--distance, 10rem);
+  }
+}
+@keyframes bubble-move {
+  0% {
+    bottom: -4rem;
+  }
+  100% {
+    bottom: var(--distance, 10rem);
+  }
+}
+@media (max-width: 991px) {
+  footer span::after {
+    top: -15px;
+    left: -65px;
+    width: 100%;
+    height: 1px;
+  }
+}

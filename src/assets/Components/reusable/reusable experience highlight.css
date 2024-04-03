@@ -1,0 +1,65 @@
+.box {
+  position: relative;
+  margin-bottom: 24px;
+}
+h3 {
+  color: white !important;
+  text-decoration: underline;
+  margin: 64px 0 !important;
+}
+
+h6,
+p {
+  color: white !important;
+}
+.box::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -35px;
+  width: 24px;
+  height: 24px;
+  background-color: red;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.box::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -25px;
+  width: 4px;
+  height: 130%;
+  background-color: red;
+  box-shadow: 0 0 8px red, 0 0 12px red, 0 0 16px red;
+}
+.box:last-child::before {
+  background-color: transparent;
+  box-shadow: none;
+}
+.box a {
+  color: red;
+}
+.boxs {
+  text-align: center;
+  display: inline-block;
+  padding: 48px 48px 24px 48px;
+  border: 2px solid red;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.boxs:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 8px red, 0 0 12px red, 0 0 16px red;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}

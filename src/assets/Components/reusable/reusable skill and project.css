@@ -1,0 +1,57 @@
+.skill {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 64px;
+  color: white;
+}
+.skill::after {
+  position: absolute;
+  top: -20px;
+  left: 75px;
+  content: "";
+  width: 80%;
+  height: 2px;
+  background-color: #860000;
+  box-shadow: 0 0 8px red, 0 0 12px #860000, 0 0 16px #860000;
+}
+.skill h4 {
+  position: relative;
+}
+.skill h4::after {
+  position: absolute;
+  top: -32px;
+  left: 0;
+  z-index: 99;
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-color: #860000;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.projects {
+  width: 95% !important;
+  height: 150px;
+  text-align: center;
+  border: 1px solid #860000;
+}
+.projects h5 {
+  color: white !important;
+  line-height: 150px;
+}
+.slick-dots li button::before {
+  font-size: 8px !important;
+  background-color: #860000 !important;
+}
+.slick-dots li.slick-active button::before {
+  color: red !important;
+}
+.slick-prev::before,
+.slick-next::before {
+  font-size: 30px !important;
+  color: red !important;
+}
