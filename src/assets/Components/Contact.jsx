@@ -6,7 +6,7 @@ const Contact = () => {
       <section id="contact">
         <Container>
           <Row>
-            <Col xs={{ span: 10, offset: 2 }}>
+            <Col xs={{ span: 10, offset: 1 }}>
               <h2>Talk with me</h2>
               <input type="text" placeholder="Enter your name" />
               <br />
